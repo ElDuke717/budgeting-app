@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function LoginForm({handleLogin}) {}) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+function LoginForm({ handleLogin }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const onSubmit = (e) => {
-      e.preventDefault();
-      handleLogin({email, password});
-      setEmail('');
-      setPassword('');
-  }
+    e.preventDefault();
+    handleLogin({ email, password });
+    setEmail("");
+    setPassword("");
+  };
 
   return (
     <div>

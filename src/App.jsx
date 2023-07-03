@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import AddTransactionPage from "./components/AddTransactionPage";
@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
+      <Routes>
         <Route path="/" exact component={HomePage} />
         <Route path="/transactions" exact component={TransactionsPage} />
         <Route path="/add" exact component={AddTransactionPage} />
-      </Switch>
+      </Routes>
     </Router>
   );
 }

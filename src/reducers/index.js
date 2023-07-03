@@ -2,7 +2,8 @@ const initialState = {
   transactions: [],
 };
 
-const budgetReducer = (action, state = initialState) => {
+// eslint-disable-next-line default-param-last
+const budgetReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_TRANSACTION":
       return {
